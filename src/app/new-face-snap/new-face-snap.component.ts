@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { FaceSnap } from '../models/face-snap.model';
 import { map, tap } from 'rxjs/operators'
-import { FaceSnapsService } from '../services/face-snaps.service';
+import { FaceSnapsService } from '../core/services/face-snaps.service';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-new-face-snap',
