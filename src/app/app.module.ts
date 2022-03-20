@@ -1,7 +1,5 @@
 import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { registerLocaleData } from '@angular/common';
-import * as fr from '@angular/common/locales/fr';
 import{ HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -34,8 +32,4 @@ import { CoreModule } from './core/core.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  constructor() {
-    registerLocaleData(fr.default);
-  }
-}
+export class AppModule {}
